@@ -10,10 +10,10 @@ int main()
     char *parray=array;
     
     for(int i=0;i<10;i++) {
-        scanf("%c",&*(parray+i));
+        scanf("%c", parray+i);
     }
     for(int i=0;i<10;i++) {
-        count[*(parray+i)-'a']++;
+        *(pcount+*(parray+i)-'a') = *(pcount+*(parray+i)-'a') + 1;
     }
 
     freq=*pcount;
