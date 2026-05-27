@@ -11,11 +11,11 @@ int main()
 
     scanf("%d", &N);
 
-    for(int i = 0; i < N; i++) {
+    for(int *p = array1; p < array1+N; p++) {
         scanf("%d", p1 + i); 
     }
 
-    for(int i = 0; i < N; i++) {
+    for(int *q = array2; q < array2+N; q++) {
         scanf("%d", p2 + i); 
     }
 
