@@ -9,10 +9,10 @@ int main()
     int *pcount=count;
     char *parray=array;
     
-    for(int i=0;i<10;i++) {
+    for(int *p=array;p<array+10;p++) {
         scanf("%c", parray+i);
     }
-    for(int i=0;i<10;i++) {
+    for(int *q=count;q<count+10;q++) {
         *(pcount+*(parray+i)-'a') = *(pcount+*(parray+i)-'a') + 1;
     }
 
