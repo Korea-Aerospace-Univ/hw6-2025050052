@@ -10,7 +10,7 @@ int main()
     char *parray=array;
     
     for(int i=0;i<10;i++) {
-        scanf("%c",&array[i]);
+        scanf("%c",&*(parray+i));
     }
     for(int i=0;i<10;i++) {
         count[*(parray+i)-'a']++;
