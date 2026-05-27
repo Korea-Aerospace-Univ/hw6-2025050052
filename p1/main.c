@@ -15,9 +15,6 @@ int main()
     for(int i=0;i<10;i++) {
         count[*(parray+i)-'a']++;
     }
-    for(int i=0;i<26;i++) {
-        printf("%d",*(pcount+i));
-    }
 
     freq=*pcount;
     
